@@ -3,19 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif; /* Mantém o estilo clássico do design */
+    font-family: 'Times New Roman', Times, serif; 
 }
 
-/* Garante que o site ocupe a tela toda sem rolar */
+
 body, html {
     width: 100%;
     height: 100%;
     overflow: hidden; 
 }
 
-/* 2. Barra Superior (Vermelha) */
+
 .top-bar {
-    background-color: #C81F26; /* Vermelho Noxxus */
+    background-color: #C81F26; 
     height: 80px;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ body, html {
 
 .logo {
     height: 120px; 
-    display: block; /* Remove o espaço extra de elementos inline */
+    display: block; 
     margin: 0 auto;
 }
 
@@ -43,14 +43,14 @@ body, html {
     padding-right: 6%;
 }   
 
-/* 4. Caixa Preta do Formulário */
+
 .form-container {
-    background-color: rgba(0, 0, 0, 0.95); /* Preto levemente transparente para elegância */
+    background-color: rgba(0, 0, 0, 0.95); 
     color: white;
     width: 380px;
     padding: 40px;
-    border-radius: 25px; /* Bordas bem arredondadas conforme solicitado */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    border-radius: 25px; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); 
 }
 
 .input-group {
@@ -72,7 +72,7 @@ body, html {
     font-size: 16px;
 }
 
-/* 5. Grupo de Botões Vermelhos */
+
 .button-group {
     display: flex;
     justify-content: space-between;
@@ -88,18 +88,18 @@ body, html {
     padding: 15px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 10px; /* Botões também arredondados */
+    border-radius: 10px; 
     transition: background 0.3s ease;
 }
 
 .btn-vender:hover, .btn-comprar:hover {
-    background-color: #a3181e; /* Efeito ao passar o mouse */
+    background-color: #a3181e; 
 }
 
 .social-icons {
     position: absolute;
-    bottom: 20px; /* Mantém a distância do fundo */
-    left: 20px;   /* MUDANÇA AQUI: Alinha à esquerda em vez da direita */
+    bottom: 20px; 
+    left: 20px;   
     display: flex;
     gap: 15px;    
     z-index: 10;  
@@ -118,23 +118,22 @@ body, html {
 @media (max-width: 768px) {
     
     .hero-section {
-        justify-content: center; /* Tira do canto e traz para o meio */
-        padding-right: 0;        /* Remove o espaço da direita */
-        padding: 20px;           /* Adiciona um respiro nas laterais */
+        justify-content: center; 
+        padding: 20px;           
     }
 
     .form-container {
-        width: 100%;             /* Faz a caixa ocupar a largura disponível */
-        max-width: 350px;        /* Mas não deixa passar de 350px para não ficar estranho */
-        padding: 25px;           /* Diminui um pouco o espaço interno para caber melhor */
+        width: 100%;            
+        max-width: 350px;        
+        padding: 25px;           
     }
 
     body, html {
-        overflow-y: auto;        /* No celular é melhor deixar rolar se o teclado abrir */
+        overflow-y: auto;        
     }
     
     .social-icons {
         left: 50%;
-        transform: translateX(-50%); /* Centraliza os ícones do Whats/Insta embaixo */
+        transform: translateX(-50%); 
     }
 }
